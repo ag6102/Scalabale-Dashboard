@@ -1,27 +1,25 @@
-# SWAApp
+# SWAApp - Dashboard for viewing statistics from various body sensors
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19. It shows data from various body sensors in statistical format.
 
-## Development server
+In this dashboard we are showing reading from 3 diffenert sensors:
+1. Blood Pressure Sensor
+2. Ear Temperature Sensor
+3. Blood Sugar Sensor
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+We can implement for more sensors in the same way as per our needs.
 
-## Code scaffolding
+Edge node downloads sensors data all day in intervals. As soon as the sensor data file is updated, statistics gets updates as per the new file data. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This helps user in viewing the data with graphs and even shows alerts if the reading don't lie in normal range.
 
-## Build
+## How to setup the application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  ### Install Dependencies
 
-## Running unit tests
+    'npm install' will install all the node moudles dependencies specified in package.json.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  ### Development server
 
-## Running end-to-end tests
+    Run `ng serve --live-reload false` for a dev server. Navigate to `http://localhost:4200/`. The app will not automatically     reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
