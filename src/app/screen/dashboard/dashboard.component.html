@@ -1,0 +1,19 @@
+<div class="dashboard-container">
+    <div class="person-selector">
+        <select (change)="changeUser($event.target.value)">
+            <option selected="true">Select</option>
+            <option *ngFor="let item of formattedJson | keyvalue" [value]="item.key">{{item.key}}</option>
+        </select>
+    </div>
+    <div *ngIf="bpData || tempData || glucoseData">
+        <div class="tile bp-data-container">
+            <app-bp-sensor-data-view [bpData]="bpData"></app-bp-sensor-data-view>
+        </div>
+        <div class="tile temp-data-container">
+            <app-temp-sensor-data-view [tempData]="tempData"></app-temp-sensor-data-view>
+        </div>
+        <div class="tile glucose-data-container">
+            <app-glucose-sensor-data-view [glucoseData]="glucoseData"></app-glucose-sensor-data-view>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="glucose-data-container">
+    <div>Lastest Glucose recorded as of {{latestData.timestamp}} : {{latestData.data}} mg/DL</div>
+    <div class="glucose-data">
+        <div class="range-chart">
+            <div class="heading">Target Blood Sugar Level For Diabetes</div>
+            <div class="age">Age 20+</div>
+            <div class="range-data">
+                <div>
+                    <div>Fasting</div>
+                    <div><span>Less than </span>100</div>
+                </div>
+                <div>
+                    <div>Before Meal</div>
+                    <div>70 - 130</div>
+                </div>
+                <div>
+                    <div>After Meal (1-2hrs)</div>
+                    <div><span>Less than </span>180</div>
+                </div>
+                <div>
+                    <div>Before Excercise</div>
+                    <div><span>If taking insuline, atleast </span>100</div>
+                </div>
+                <div>
+                    <div>Bedtime</div>
+                    <div>100 - 140</div>
+                </div>
+            </div>
+        </div>
+        <div class="current-graph">
+            <canvas id="glucoseCanvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+</div>

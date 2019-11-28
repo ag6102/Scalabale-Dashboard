@@ -1,0 +1,19 @@
+<div>
+    <div class="heading">Lastest Blood Pressure recorded as of {{latestData.timestamp}}</div>
+    <div class="latest-data" [ngClass] = "latestData.class">
+        <div class="data-container">
+                <div class="type">{{latestData.analysedType}}</div>
+                <div>
+                    <div class="header">Systolic<br/><i>(Top number)</i></div>
+                    <div>{{latestData.data.systolic}}</div>
+                </div>
+                <div>
+                    <div class="header">Diastolic<br/><i>(Bottom Number)</i></div>
+                    <div>{{latestData.data.diastolic}}</div>
+                </div>
+        </div>
+        <div class="msg-container">
+            {{latestData.message}}
+        </div>
+    </div>
+</div>

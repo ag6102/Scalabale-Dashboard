@@ -1,0 +1,48 @@
+.glucose-data{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+.range-data{
+    width: 90%;
+    padding: 0 0.5em;
+}
+
+.heading{
+    line-height: 1.2em;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: #3795cd;
+    color: #fff;
+    box-shadow: 10px 10px 10px #e0dddd;
+    padding: 1em 0.5em;
+    position: relative;
+}
+
+.range-chart .age{
+    background-color: #c9e2a9;
+    box-shadow: 10px 10px 10px #ccc;
+    font-size: 0.9em;
+    padding: 0 0.5em;
+}
+
+.range-chart>div>div{
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.range-chart>div>div span{
+    color: #ccc;
+    max-width: 92px;
+    display: inline-block;
+    line-height: 1em;
+    padding-right: 0.1em;
+}
+
+.range-chart{
+    min-width: 290px;
+    line-height: 3em;
+}
